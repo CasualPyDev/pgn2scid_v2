@@ -1,18 +1,19 @@
 from PyQt5.QtGui import QTextCursor
 from PyQt5 import QtWidgets, uic, QtGui
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
-from PyQt5.QtWidgets import QLineEdit
+from PyQt5.QtWidgets import QLineEdit, QStyleFactory, QApplication
 
 import sys
 
 
 appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
+appctxt.app.setStyle('Windows')
 
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
-        uic.loadUi('ui/pgn2scid.ui', self)
+        uic.loadUi('ui/main.ui', self)
         self.show()
 
         self.console_log = self.findChild(QtWidgets.QPlainTextEdit, 'plainTextEdit')
