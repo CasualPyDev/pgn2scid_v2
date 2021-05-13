@@ -7,7 +7,7 @@ import sys
 
 
 appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
-appctxt.app.setStyle('Windows')
+appctxt.app.setStyle('Fusion')
 
 
 class Ui(QtWidgets.QMainWindow):
@@ -37,7 +37,7 @@ class Ui(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
-    window = Ui()
-    window.show()
+    main_window = Ui()
+    main_window.show()
     exit_code = appctxt.app.exec_()      # 2. Invoke appctxt.app.exec_()
     sys.exit(exit_code)
