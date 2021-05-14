@@ -13,7 +13,7 @@ appctxt.app.setStyle('Fusion')
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
-        uic.loadUi('ui/main.ui', self)
+        uic.loadUi('main.ui', self)
         self.show()
 
         self.console_log = self.findChild(QtWidgets.QPlainTextEdit, 'plainTextEdit')
