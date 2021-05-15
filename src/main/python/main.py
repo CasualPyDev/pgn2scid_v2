@@ -1,3 +1,5 @@
+import platform
+
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
 
 import ui_init
@@ -6,6 +8,7 @@ import sys
 appctxt = ApplicationContext()       # 1. Instantiate ApplicationContext
 appctxt.app.setStyle('Fusion')
 
+OP_SYS = platform.system()
 
 if __name__ == '__main__':
     main_window = ui_init.MainUi()
