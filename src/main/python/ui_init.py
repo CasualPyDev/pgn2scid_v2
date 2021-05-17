@@ -1,3 +1,4 @@
+from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QTextCursor
 from PyQt5 import QtWidgets, uic, QtGui
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
@@ -11,11 +12,12 @@ class MainUi(QtWidgets.QMainWindow):
         uic.loadUi('main.ui', self)
         self.show()
 
-        self.console_log = self.findChild(QtWidgets.QPlainTextEdit, 'plainTextEdit')
+        self.console_log = self.findChild(QtWidgets.QTextEdit, 'console')
         self.work_path = self.findChild(QtWidgets.QLineEdit, 'w_path')
         self.select_wpath_button = self.findChild(QtWidgets.QPushButton, 'wpath_button')
         self.enable_twic = self.findChild(QtWidgets.QCheckBox, 'twic_auto_dl')
         self.enable_proxy = self.findChild(QtWidgets.QCheckBox, 'enable_proxy')
+        self.set_proxy = self.findChild(QtWidgets.QPushButton, 'proxy_button')
         self.extract_pgn = self.findChild(QtWidgets.QCheckBox, 'extract_pgn')
         self.delete_zip = self.findChild(QtWidgets.QCheckBox, 'delete_zip')
         self.merge_pgn = self.findChild(QtWidgets.QCheckBox, 'merge_pgn')
@@ -29,5 +31,12 @@ class MainUi(QtWidgets.QMainWindow):
         self.select_db_button = self.findChild(QtWidgets.QPushButton, 'select_db_button')
         self.start = self.findChild(QtWidgets.QPushButton, 'start')
         self.exit = self.findChild(QtWidgets.QPushButton, 'exit')
+
+        self.console_log.setAlignment(Qt.AlignCenter)
+        self.console_log.insertPlainText("pgn2scid 2.0\n")
+        self.console_log.insertPlainText("Copyright (c) 2017 - 2021 Andreas Kreisig\n")
+        self.console_log.insertPlainText("Released under the terms of the GPL v3\n")
+        self.console_log.insertPlainText("This program comes with absolutely NO WARRANTY\n")
+        self.console_log.insertPlainText("pgnscid & scmerge copyright (c) by Shane Hudson\n")
 
 
