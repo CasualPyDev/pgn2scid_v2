@@ -1,7 +1,6 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QTextCursor
 from PyQt5 import QtWidgets, uic, QtGui
-from fbs_runtime.application_context.PyQt5 import ApplicationContext
 from PyQt5.QtWidgets import QLineEdit, QStyleFactory, QApplication
 import sys
 
@@ -27,13 +26,15 @@ class MainUi(QtWidgets.QMainWindow):
         self.invoke_scmerge = self.findChild(QtWidgets.QCheckBox, 'invoke_scmerge')
         self.create_zip = self.findChild(QtWidgets.QCheckBox, 'create_zip')
         self.delete_scid = self.findChild(QtWidgets.QCheckBox, 'delete_scid')
-        self.select_db = self.findChild(QtWidgets.QLineEdit, 'select_db_edit')
-        self.select_db_button = self.findChild(QtWidgets.QPushButton, 'select_db_button')
+        self.select_db = self.findChild(QtWidgets.QComboBox, 'select_db')
+        self.add_db_button = self.findChild(QtWidgets.QPushButton, 'add_db')
+        self.delete_db_button = self.findChild(QtWidgets.QPushButton, 'delete_db')
+        self.default_db = self.findChild(QtWidgets.QCheckBox, 'default_db')
         self.start = self.findChild(QtWidgets.QPushButton, 'start')
         self.exit = self.findChild(QtWidgets.QPushButton, 'exit')
 
         self.console_log.setAlignment(Qt.AlignCenter)
-        self.console_log.insertPlainText("pgn2scid 2.0\n")
+        self.console_log.insertPlainText("pgn2scid 2.0.beta0\n")
         self.console_log.insertPlainText("Copyright (c) 2017 - 2021 Andreas Kreisig\n")
         self.console_log.insertPlainText("Released under the terms of the GPL v3\n")
         self.console_log.insertPlainText("This program comes with absolutely NO WARRANTY\n")
