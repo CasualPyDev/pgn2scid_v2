@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pgn2scid-v2"
+version = "0.1.0"
+description = "pgn2scid V2"
+authors = ["Andreas Kreisig <andreaskreisig@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pgn2scid_v2", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pyside6 = "^6.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
