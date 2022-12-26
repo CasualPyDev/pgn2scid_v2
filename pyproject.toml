@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "pgn2scid-v2"
-version = "0.1.0"
+name = "pgn2scid_v2"
+version = "2.1.0"
 description = "pgn2scid V2"
 authors = ["Andreas Kreisig <andreaskreisig@gmail.com>"]
 readme = "README.md"
