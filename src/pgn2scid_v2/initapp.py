@@ -7,7 +7,7 @@ except ModuleNotFoundError:
     import tomli as tomllib
 import tomli_w
 
-def create_toml_file():
+def init_toml_file():
     config = {
         "GENERAL": {
             "enable_twic_auto_dl": 0,
@@ -39,7 +39,7 @@ def read_config():
             config = tomllib.load(fr)
         return config
     except FileNotFoundError:
-        create_toml_file()
+        init_toml_file()
 
 
 app_config_read = read_config()
