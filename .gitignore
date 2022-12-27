@@ -167,3 +167,6 @@ cython_debug/
 
 # Local history
 .history/
+
+# toml files created by pgn2scid
+pgn2scid.toml

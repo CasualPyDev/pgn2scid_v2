@@ -9,6 +9,8 @@ packages = [{include = "pgn2scid_v2", from = "src"}]
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 pyside6 = "^6.4.1"
+pylint = "^2.15.9"
+tomli-w = "^1.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
