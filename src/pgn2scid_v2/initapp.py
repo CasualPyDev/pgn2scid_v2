@@ -2,7 +2,7 @@
 # type: ignore
 
 try:
-    import tomli
+    import tomllib
 except ModuleNotFoundError:
     import tomli as tomllib
 import tomli_w
