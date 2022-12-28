@@ -11,9 +11,8 @@ import initapp
 
 class MainWindow(QMainWindow, Ui_QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super().__init__()
         self.setupUi(self)
-        # self.show
 
 
 print(initapp.app_config_read)

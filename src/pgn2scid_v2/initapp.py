@@ -6,6 +6,8 @@ try:
 except ModuleNotFoundError:
     import tomli as tomllib
 import tomli_w
+import time
+
 
 def init_toml_file():
     config = {
@@ -32,7 +34,6 @@ def init_toml_file():
         tomli_w.dump(config, fw)
 
 
-
 def read_config():
     try:
         with open('pgn2scid.toml', mode='rb') as fr:
@@ -40,6 +41,10 @@ def read_config():
         return config
     except FileNotFoundError:
         init_toml_file()
+        time.sleep(0.5)
+        with open('pgn2scid.toml', mode='rb') as fr:
+            config = tomllib.load(fr)
+        return config
 
 
 app_config_read = read_config()
