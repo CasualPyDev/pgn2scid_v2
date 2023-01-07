@@ -15,7 +15,7 @@ class MainWindow(QMainWindow, Ui_QMainWindow):
         self.setupUi(self)
 
 
-print(initapp.app_config_read)
+print(initapp.app_config_get)
 
 app = QApplication()
 app.setStyle('Fusion')

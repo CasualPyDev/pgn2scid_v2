@@ -3,6 +3,7 @@ name = "pgn2scid_v2"
 version = "2.1.0"
 description = "pgn2scid V2"
 authors = ["Andreas Kreisig <andreaskreisig@gmail.com>"]
+license = "MIT"
 readme = "README.md"
 packages = [{include = "pgn2scid_v2", from = "src"}]
 

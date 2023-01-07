@@ -34,7 +34,7 @@ def init_toml_file():
         tomli_w.dump(config, fw)
 
 
-def read_config():
+def get_config():
     try:
         with open('pgn2scid.toml', mode='rb') as fr:
             config = tomllib.load(fr)
@@ -47,4 +47,8 @@ def read_config():
         return config
 
 
-app_config_read = read_config()
+def set_config():
+    pass
+
+
+app_config_get = get_config()
