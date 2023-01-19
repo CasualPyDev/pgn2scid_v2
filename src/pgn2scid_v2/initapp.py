@@ -51,4 +51,4 @@ def set_config():
     pass
 
 
-app_config_get = get_config()
+app_config = get_config()

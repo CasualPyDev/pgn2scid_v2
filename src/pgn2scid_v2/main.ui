@@ -309,7 +309,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>540</y>
+      <y>580</y>
       <width>561</width>
       <height>22</height>
      </rect>
@@ -330,7 +330,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>570</y>
+      <y>640</y>
       <width>341</width>
       <height>22</height>
      </rect>
@@ -351,7 +351,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>607</y>
+      <y>547</y>
       <width>131</width>
       <height>18</height>
      </rect>
@@ -372,7 +372,7 @@
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>600</y>
+      <y>540</y>
       <width>41</width>
       <height>34</height>
      </rect>
@@ -421,7 +421,7 @@
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>600</y>
+      <y>540</y>
       <width>441</width>
       <height>32</height>
      </rect>
@@ -439,7 +439,7 @@
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>600</y>
+      <y>540</y>
       <width>41</width>
       <height>34</height>
      </rect>
@@ -458,8 +458,8 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>640</y>
-      <width>351</width>
+      <y>610</y>
+      <width>231</width>
       <height>22</height>
      </rect>
     </property>
@@ -469,7 +469,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Use selected database as default database</string>
+     <string>Always ask bevore merging</string>
     </property>
    </widget>
    <widget class="Line" name="line">
