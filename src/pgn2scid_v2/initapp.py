@@ -22,12 +22,12 @@ def init_toml_file():
             "delete_remaining_pgn": 0,
             "merge_scid_database": 0,
             "write_zipped_scid_copy": 0,
+            "ask_before_merging": 0,
             "delete_scid_files": 0,
         },
         "PATHS": {
-            "work_path": "",
+            "working_path": "",
             "database_dir": "",
-            "default_database": "",
         }
     }
     with open('pgn2scid.toml', mode='wb') as fw:
@@ -51,4 +51,4 @@ def set_config():
     pass
 
 
-app_config = get_config()
+get_app_config = get_config()
