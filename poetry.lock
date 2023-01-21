@@ -88,6 +88,17 @@ files = [
 ]
 
 [[package]]
+name = "nuitka"
+version = "1.3.8"
+description = "Python compiler with full language support and CPython compatibility"
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "Nuitka-1.3.8.tar.gz", hash = "sha256:9f77cfd6da53f18a0ca29b789e3ed01dc6d6c5f27da1bb094c63d2963c067d95"},
+]
+
+[[package]]
 name = "packaging"
 version = "23.0"
 description = "Core utilities for Python packages"
@@ -266,4 +277,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "9d595e05cb1860c3389c9e4bbcbc109ca4ea783289114b0ab5b2ef9e07621889"
+content-hash = "888a873271c530c1a2a0cb58b7f2b0d4f4840ac6ab4b83b266bce45900789f9e"

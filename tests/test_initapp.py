@@ -14,10 +14,9 @@ toml_config_file = os.path.abspath(os.path.join(toml_config_path,
                                                 'pgn2scid.toml'))
 
 
-# Preperation
-@pytest.fixture(scope='session')
+# Preparation
+@pytest.fixture()
 def delete_toml():
-    os.chdir(toml_config_path)
     if os.path.isfile(toml_config_file):
         os.remove('pgn2scid.toml')
         time.sleep(0.3)
